@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(58, 58, 58);
+}
+
+main {
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+  border: 1px solid black;
+  background: cornsilk;
+
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+  grid-template-areas: "display display display display display" "one two three . ." "four five six . ." "seven eight nine . ." ". zero dot equal equal";
+}
+
+#display {
+  margin: 15px;
+  padding: 10px;
+  border: 0.5px solid black;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  grid-area: display;
+  font-size: 40px;
+  border-radius: 3px;
+  border: solid 0.5px grey;
+  background: rgb(255, 253, 246);
+}
+
+button {
+  border-radius: 3px;
+  border: solid 0.5px grey;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: darkgoldenrod;
+}
+
+.keyboard {
+  margin: 20px;
+  font-size: 25px;
+}
+
+.op {
+  background: orange;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+#equal {
+  grid-area: equal;
+}
+#dot {
+  grid-area: dot;
+}
