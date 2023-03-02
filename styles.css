@@ -55,7 +55,8 @@ button:active {
   font-size: 25px;
 }
 
-.op {
+.op,
+.special {
   background: orange;
 }
 
