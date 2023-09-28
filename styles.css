@@ -22,7 +22,7 @@ main {
 
   display: grid;
   grid-template: repeat(5, 1fr) / repeat(5, 1fr);
-  grid-template-areas: "display display display display display" "one two three . ." "four five six . ." "seven eight nine . ." ". zero dot equal equal";
+  grid-template-areas: "display display display display display" "one two three . ." "four five six . ." "seven eight nine . ." ". zero dot power root" ". . . equal equal";
 }
 
 #display {
@@ -99,4 +99,13 @@ button:active {
 }
 #dot {
   grid-area: dot;
+}
+#power {
+  grid-area: power;
+}
+#root {
+  grid-area: root;
+}
+.sup {
+  font-size: 12px;
 }
